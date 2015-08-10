@@ -140,6 +140,67 @@ class Client
     }
 
     /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getOrganicResults($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_ORGANIC_RESULTS, ['phrase' => $phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getPhraseMatchKeywords($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_FULLSEARCH, ['phrase' => $phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getKeywordOverview($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_ALL, ['phrase' => $phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getPaidResults($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_ADWORDS, ['phrase' => $phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getKeywordAdsHistory($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_ADWORDS_HISTORICAL, ['phrase' => $phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getKeywordDifficulty($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_KDI, ['phrase' => $phrase] + $options);
+    }
+
+
+    /**
      * Make the request
      *
      * @param string $type

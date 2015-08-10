@@ -250,5 +250,181 @@
       "COLUMN_DOMAIN_KEYWORD_TARGET_URL",
       "COLUMN_DOMAIN_KEYWORD_NUMBER"
     ]
+  },
+  "phrase_fullsearch": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "display_limit": "integer"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY",
+      "COLUMN_KEYWORD_ORGANIC_NUMBER_OF_RESULTS",
+      "COLUMN_KEYWORD_INTEREST"
+    ],
+    "valid_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY",
+      "COLUMN_KEYWORD_ORGANIC_NUMBER_OF_RESULTS",
+      "COLUMN_KEYWORD_INTEREST"
+    ]
+  },
+  "phrase_organic": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "display_limit": "integer"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL",
+      "COLUMN_OVERVIEW_DOMAIN"
+    ],
+    "valid_columns": [
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL",
+      "COLUMN_OVERVIEW_DOMAIN"
+    ]
+  },
+  "phrase_all": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase"
+    },
+    "optional_fields": {
+      "database": "database",
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "export_decode": "boolean"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_OVERVIEW_DATABASE",
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DATABASE",
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY"
+    ]
+  },
+  "phrase_adwords": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "export_decode": "boolean",
+      "display_date": "date"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
+    ]
+  },
+  "phrase_adwords_historical": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "export_decode": "boolean",
+      "display_limit": "integer",
+      "display_offset": "integer"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_OVERVIEW_DATE",
+      "COLUMN_DOMAIN_KEYWORD_ORGANIC_POSITION",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL",
+      "COLUMN_DOMAIN_KEYWORD_AD_TITLE",
+      "COLUMN_DOMAIN_KEYWORD_AD_TEXT",
+      "COLUMN_DOMAIN_KEYWORD_VISIBLE_URL",
+      "COLUMN_OVERVIEW_ADWORDS_TRAFFIC",
+      "COLUMN_OVERVIEW_ADWORDS_BUDGET",
+      "COLUMN_OVERVIEW_ADWORDS_KEYWORDS"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_OVERVIEW_DATE",
+      "COLUMN_DOMAIN_KEYWORD_ORGANIC_POSITION",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL",
+      "COLUMN_DOMAIN_KEYWORD_AD_TITLE",
+      "COLUMN_DOMAIN_KEYWORD_AD_TEXT",
+      "COLUMN_DOMAIN_KEYWORD_VISIBLE_URL",
+      "COLUMN_OVERVIEW_ADWORDS_TRAFFIC",
+      "COLUMN_OVERVIEW_ADWORDS_BUDGET",
+      "COLUMN_OVERVIEW_ADWORDS_KEYWORDS"
+    ]
+  },
+  "phrase_kdi": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_DIFFICULTY"
+    ],
+    "valid_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_DIFFICULTY"
+    ]
   }
 }

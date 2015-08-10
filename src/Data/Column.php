@@ -33,6 +33,7 @@ abstract class Column
     const COLUMN_DOMAIN_KEYWORD_NUMBER = "Pc";
     const COLUMN_DOMAIN_KEYWORD_POSITION_DIFFERENCE = "Pd";
     const COLUMN_DOMAIN_ADWORD_POSITION = "Ab";
+    const COLUMN_KEYWORD_DIFFICULTY = "Kd";
 
     /**
      * Get all the possible columns
