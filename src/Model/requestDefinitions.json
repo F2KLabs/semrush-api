@@ -163,6 +163,44 @@
       "COLUMN_DOMAIN_KEYWORD_NUMBER"
     ]
   },
+  "domain_organic_organic": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "domain": "domain",
+      "database": "database"
+    },
+    "optional_fields": {
+      "display_date": "date",
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "display_sort": "string",
+      "display_limit": "integer",
+      "display_offset": "integer"
+
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_KEYWORD_COMPETITION_LEVEL",
+      "COLUMN_KEYWORDS_COMMON",
+      "COLUMN_OVERVIEW_ORGANIC_KEYWORDS",
+      "COLUMN_OVERVIEW_ORGANIC_TRAFFIC",
+      "COLUMN_OVERVIEW_ORGANIC_BUDGET",
+      "COLUMN_OVERVIEW_ADWORDS_KEYWORDS"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_KEYWORD_COMPETITION_LEVEL",
+      "COLUMN_KEYWORDS_COMMON",
+      "COLUMN_OVERVIEW_ORGANIC_KEYWORDS",
+      "COLUMN_OVERVIEW_ORGANIC_TRAFFIC",
+      "COLUMN_OVERVIEW_ORGANIC_BUDGET",
+      "COLUMN_OVERVIEW_ADWORDS_KEYWORDS"
+    ]
+  },
   "domain_adwords": {
     "required_fields": {
       "type": "type",
@@ -426,5 +464,6 @@
       "COLUMN_DOMAIN_KEYWORD",
       "COLUMN_KEYWORD_DIFFICULTY"
     ]
-  }
+  },
+
 }

@@ -34,6 +34,8 @@ abstract class Column
     const COLUMN_DOMAIN_KEYWORD_POSITION_DIFFERENCE = "Pd";
     const COLUMN_DOMAIN_ADWORD_POSITION = "Ab";
     const COLUMN_KEYWORD_DIFFICULTY = "Kd";
+    const COLUMN_KEYWORD_COMPETITION_LEVEL = "Cr";
+    const COLUMN_KEYWORDS_COMMON = "Np";
 
     /**
      * Get all the possible columns
