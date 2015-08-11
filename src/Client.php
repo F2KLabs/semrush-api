@@ -116,7 +116,7 @@ class Client
      */
     public  function getDomainOrganicCompetitors($domain, $options = [])
     {
-        return $this->makeRequest(Type::TYPE_DOMAIN_ORGANIC_COMPETITORS, ['domain' => $domain + $options]);
+        return $this->makeRequest(Type::TYPE_DOMAIN_ORGANIC_COMPETITORS, ['domain' => $domain] + $options);
     }
 
     /**
