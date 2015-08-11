@@ -1,6 +1,6 @@
 {
-    "name": "f2klabs/semrush-api",
-    "description": "Extended version of Silktide's SEMrush API client. Original package can be found at https://github.com/silktide/semrush-api.",
+    "name": "silktide/semrush-api",
+    "description": "SEMrush API client",
     "require": {
         "php": ">=5.5.0",
         "guzzle/guzzle": "~3.9"
@@ -12,13 +12,13 @@
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "Matthew Moore",
-            "email": "Matthew.Moore@f2klabs.com"
+            "name": "Andrew Waite",
+            "email": "andrewwaite@silktide.com"
         }
     ],
     "autoload": {
       "psr-4": {
-        "library\\Silktide\\SemRushApi\\": "src",
+        "Silktide\\SemRushApi\\": "src",
         "Silktide\\SemRushApi\\Test\\": "test"
       }
     }
