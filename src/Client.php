@@ -174,6 +174,16 @@ class Client
      * @param array $options
      * @return ApiResult
      */
+    public function getRelatedKeywords($phrase, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_RELATED, ['phrase'=>$phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
     public function getKeywordOverview($phrase, $options = [])
     {
         return $this->makeRequest(Type::TYPE_PHRASE_ALL, ['phrase' => $phrase] + $options);
