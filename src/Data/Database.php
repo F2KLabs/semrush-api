@@ -34,6 +34,8 @@ abstract class Database
     const DATABASE_GOOGLE_SG = "sg";
     const DATABASE_GOOGLE_TR = "tr";
 
+    const DATABASE_ALL = "us,uk,ca,ru,de,fr,es,it,br,au,bing-us,ar,be,dh,dk,fi,hk,ie,il,mx,nl,no,pl,se,sg,tr";
+
     /**
      * Get all the possible databases
      *
