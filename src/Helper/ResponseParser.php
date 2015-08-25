@@ -31,7 +31,13 @@ class ResponseParser
         $columns = $request->getExpectedResultColumns();
         $rows = $this->hackToFixNewlineInCell($rows);
 
-        foreach ($rows as &$row) {
+        foreach ($rows as $id => &$row) {
+
+            if (empty($row)) {
+                unset($rows[$id]);
+                continue;
+            }
+
             $row = $this->parseRow($columns, $row);
         }
 
