@@ -194,6 +194,16 @@ class Client
      * @param array $options
      * @return ApiResult
      */
+    public function getKeywordOverviewSingle($phrase, $options = [])
+    {
+        return $this->makeRequest(TYPE::TYPE_PHRASE_THIS, ['phrase'=> $phrase] + $options);
+    }
+
+    /**
+     * @param $phrase
+     * @param array $options
+     * @return ApiResult
+     */
     public function getPaidResults($phrase, $options = [])
     {
         return $this->makeRequest(Type::TYPE_PHRASE_ADWORDS, ['phrase' => $phrase] + $options);

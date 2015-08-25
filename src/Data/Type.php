@@ -24,6 +24,7 @@ abstract class Type
     const TYPE_PHRASE_ADWORDS_HISTORICAL    = "phrase_adwords_historical";
     const TYPE_PHRASE_KDI                   = "phrase_kdi";
     const TYPE_PHRASE_RELATED               = "phrase_related";
+    const TYPE_PHRASE_THIS                  = "phrase_this";
 
     /**
      * Get all the possible columns

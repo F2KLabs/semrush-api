@@ -365,12 +365,40 @@
       "COLUMN_DOMAIN_KEYWORD",
       "COLUMN_KEYWORD_AVERAGE_QUERIES",
       "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DATABASE",
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY"
+    ]
+  },
+  "phrase_this": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "phrase",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "export_decode": "boolean"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
       "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY",
       "COLUMN_KEYWORD_ORGANIC_NUMBER_OF_RESULTS"
     ],
     "valid_columns": [
       "COLUMN_KEYWORD_ORGANIC_NUMBER_OF_RESULTS",
-      "COLUMN_OVERVIEW_DATABASE",
       "COLUMN_DOMAIN_KEYWORD",
       "COLUMN_KEYWORD_AVERAGE_QUERIES",
       "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
