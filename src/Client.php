@@ -235,9 +235,9 @@ class Client
      * @param string $root_domain
      * @return ApiResult
      */
-    public function getPublisherTextAds($options = [], $endpoint_path = "/", $root_domain = "http://api.asns.backend.semrush.com")
+    public function getPublisherTextAds($domain, $options = [], $endpoint_path = "/", $root_domain = "http://api.asns.backend.semrush.com")
     {
-        return $this->makeRequest(Type::TYPE_PUBLISHER_TEXT_ADS, $options, $endpoint_path, $root_domain);
+        return $this->makeRequest(Type::TYPE_PUBLISHER_TEXT_ADS, ['domain'=>$domain] + $options, $endpoint_path, $root_domain);
     }
 
 
