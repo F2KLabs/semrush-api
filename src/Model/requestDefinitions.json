@@ -575,5 +575,46 @@
       "COLUMN_MEDIA_TYPE",
       "COLUMN_VISIBLE_URL"
     ]
+  },
+  "advertiser_landings": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "action": "string",
+      "domain": "string",
+      "export": "string"
+    },
+    "optional_fields": {
+      "display_limit": "integer",
+      "display_offset": "integer",
+      "export_escape": "boolean",
+      "export_decode": "boolean",
+      "export_columns": "columns",
+      "display_sort": "string",
+      "device_type": "string",
+      "display_filter": "string"
+    },
+    "preset_fields": {
+      "export_escape": "1",
+      "action": "report",
+      "device_type": "all",
+      "export": "api"
+    },
+    "default_columns": [
+      "COLUMN_TARGET_URL",
+      "COLUMN_FIRST_SEEN",
+      "COLUMN_LAST_SEEN",
+      "COLUMN_TIMES_SEEN",
+      "COLUMN_TARGET_URL",
+      "COLUMN_ADS_COUNT"
+    ],
+    "valid_columns": [
+      "COLUMN_TARGET_URL",
+      "COLUMN_FIRST_SEEN",
+      "COLUMN_LAST_SEEN",
+      "COLUMN_TIMES_SEEN",
+      "COLUMN_TARGET_URL",
+      "COLUMN_ADS_COUNT"
+    ]
   }
 }

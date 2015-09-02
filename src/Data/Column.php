@@ -45,8 +45,9 @@ abstract class Column
     const COLUMN_TIMES_SEEN     = "times_seen";
     const COLUMN_AVG_POSITION   = "avg_position";
     const COLUMN_MEDIA_TYPE     = "media_type";
-    CONST COLUMN_VISIBLE_URL    = "visible_url";
-
+    const COLUMN_VISIBLE_URL    = "visible_url";
+    const COLUMN_TARGET_URL     = "target_url";
+    const COLUMN_ADS_COUNT      = "ads_count";
 
     /**
      * Get all the possible columns

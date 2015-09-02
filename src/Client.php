@@ -241,6 +241,18 @@ class Client
         return $this->makeRequest(Type::TYPE_PUBLISHER_TEXT_ADS, ['domain'=>$domain] + $options, $endpoint_path, $root_domain);
     }
 
+    /**
+     * @param $domain
+     * @param array $options
+     * @param string $endpoint_path
+     * @param string $root_domain
+     * @return ApiResult
+     */
+    public function getAdvertiserLandings($domain, $options = [], $endpoint_path = "/", $root_domain = "http://api.asns.backend.semrush.com")
+    {
+        return $this->makeRequest(Type::TYPE_ADVERTISER_LANDINGS, ['domain'=>$domain] + $options, $endpoint_path, $root_domain);
+    }
+
 
     /**
      * Make the request
