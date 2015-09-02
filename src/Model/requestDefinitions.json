@@ -537,7 +537,8 @@
     "required_fields": {
       "type": "type",
       "key": "string",
-      "action": "string"
+      "action": "string",
+      "domain": "string"
     },
     "optional_fields": {
       "display_limit": "integer",

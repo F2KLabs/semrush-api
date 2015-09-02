@@ -230,6 +230,7 @@ class Client
     }
 
     /**
+     * @param string $domain
      * @param array $options
      * @param string $endpoint_path
      * @param string $root_domain
