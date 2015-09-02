@@ -14,9 +14,9 @@ class RequestFactory
      * @param array $options
      * @return Request
      */
-    public function create($type, $options)
+    public function create($type, $options, $endpoint_path, $root_domain)
     {
-        return new Request($type, $options);
+        return new Request($type, $options, $endpoint_path, $root_domain);
     }
 
 } 

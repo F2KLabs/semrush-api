@@ -229,6 +229,17 @@ class Client
         return $this->makeRequest(Type::TYPE_PHRASE_KDI, ['phrase' => $phrase] + $options);
     }
 
+    /**
+     * @param array $options
+     * @param string $endpoint_path
+     * @param string $root_domain
+     * @return ApiResult
+     */
+    public function getPublisherTextAds($options = [], $endpoint_path = "/", $root_domain = "http://api.asns.backend.semrush.com")
+    {
+        return $this->makeRequest(Type::TYPE_PUBLISHER_TEXT_ADS, $options, $endpoint_path, $root_domain);
+    }
+
 
     /**
      * Make the request
@@ -237,9 +248,9 @@ class Client
      * @param array $options
      * @return ApiResult
      */
-    protected function makeRequest($type, $options)
+    protected function makeRequest($type, $options, $endpoint_path = \Silktide\SemRushApi\Data\ApiEndpoint::ENDPOINT_DOMAIN, $root_domain = "http://api.semrush.com")
     {
-        $request = $this->requestFactory->create($type, ['key' => $this->apiKey] + $options);
+        $request = $this->requestFactory->create($type, ['key' => $this->apiKey] + $options, $endpoint_path, $root_domain);
 
         // Attempt load from cache
         if (isset($this->cache)) {

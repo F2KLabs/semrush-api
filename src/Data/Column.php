@@ -37,6 +37,17 @@ abstract class Column
     const COLUMN_KEYWORD_COMPETITION_LEVEL = "Cr";
     const COLUMN_KEYWORDS_COMMON = "Np";
 
+    /* Display Advertising Report Columns */
+    const COLUMN_TITLE          = "title";
+    const COLUMN_TEXT           = "text";
+    const COLUMN_FIRST_SEEN     = "first_seen";
+    const COLUMN_LAST_SEEN      = "last_seen";
+    const COLUMN_TIMES_SEEN     = "times_seen";
+    const COLUMN_AVG_POSITION   = "avg_position";
+    const COLUMN_MEDIA_TYPE     = "media_type";
+    CONST COLUMN_VISIBLE_URL    = "visible_url";
+
+
     /**
      * Get all the possible columns
      *
