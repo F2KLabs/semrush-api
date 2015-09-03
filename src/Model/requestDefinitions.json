@@ -676,7 +676,7 @@
       "display_sort": "string"
     },
     "preset_fields": {
-      "target_type": "domain"
+      "target_type": "root_domain"
     },
     "default_columns": [
       "COLUMN_RESPONSE_CODE",
@@ -714,7 +714,7 @@
       "display_filter": "string"
     },
     "preset_fields": {
-      "target_type": "domain"
+      "target_type": "root_domain"
     },
     "default_columns": [
       "COLUMN_DOMAIN",
