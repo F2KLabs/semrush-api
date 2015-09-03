@@ -268,7 +268,13 @@ class Client
 
     public function getIndexedPages($target, $options = [], $endpoint_path = ApiEndpoint::ENDPOINT_ANALYTICS)
     {
-        return $this->makeRequest(Type::TYPE_INDEXED_PAGES, ['targe'=>$target] + $options, $endpoint_path);
+        return $this->makeRequest(Type::TYPE_INDEXED_PAGES, ['target'=>$target] + $options, $endpoint_path);
+    }
+
+
+    public function getRefDomains($target, $options = [], $endpoint_path = ApiEndpoint::ENDPOINT_ANALYTICS)
+    {
+        return $this->makeRequest(Type::TYPE_BACKLINKS_REFDOMAINS, ['target'=>$target] + $options, $endpoint_path);
     }
 
 
