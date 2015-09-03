@@ -49,6 +49,20 @@ abstract class Column
     const COLUMN_TARGET_URL     = "target_url";
     const COLUMN_ADS_COUNT      = "ads_count";
 
+    /* BACKLINKS COLUMNS */
+    const COLUMN_DOMAIN         = "domain";
+    const COLUMN_BACKLINKS      = "backlinks";
+    const COLUMN_IP             = "ip";
+    const COLUMN_COUNTRY        = "country";
+    const COLUMN_RESPONSE_CODE  = "response_code";
+    const COLUMN_BACKLINKS_NUM  = "backlinks_num";
+    const COLUMN_DOMAINS_NUM    = "domains_num";
+    const COLUMN_EXTERNAL_NUM   = "external_num";
+    const COLUMN_INTERNAL_NUM   = "internal_num";
+    const COLUMN_SOURCE_URL     = "source_url";
+    const COLUMN_SOURCE_TITLE   = "source_title";
+
+
     /**
      * Get all the possible columns
      *

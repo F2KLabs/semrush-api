@@ -3,6 +3,7 @@
 namespace Silktide\SemRushApi;
 
 use Silktide\SemRushApi\Cache\CacheInterface;
+use Silktide\SemRushApi\Data\ApiEndpoint;
 use Silktide\SemRushApi\Data\Type;
 use Silktide\SemRushApi\Helper\ResponseParser;
 use Silktide\SemRushApi\Helper\UrlBuilder;
@@ -263,6 +264,11 @@ class Client
     public function getAdvertiserTextAds($domain, $options = [], $endpoint_path = "/", $root_domain = "http://api.asns.backend.semrush.com")
     {
         return $this->makeRequest(Type::TYPE_ADVERTISER_TEXT_ADS, ['domain'=>$domain] + $options, $endpoint_path, $root_domain);
+    }
+
+    public function getIndexedPages($target, $options = [], $endpoint_path = ApiEndpoint::ENDPOINT_ANALYTICS)
+    {
+        return $this->makeRequest(Type::TYPE_INDEXED_PAGES, ['targe'=>$target] + $options, $endpoint_path);
     }
 
 

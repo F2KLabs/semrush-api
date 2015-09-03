@@ -34,7 +34,11 @@ abstract class Type
     const TYPE_ADVERTISER_LANDINGS              = "advertiser_landings";
     const TYPE_ADVERTISER_PUBLISHER_TEXT_ADS    = "advertiser_publisher_text_ads";
     const TYPE_ADVERTISER_RANK                  = "advertiser_rank";
-    const TYPE_PUBLISHER_RANK                    = "publisher_rank";
+    const TYPE_PUBLISHER_RANK                   = "publisher_rank";
+
+    /* Backlinks */
+    const TYPE_INDEXED_PAGES                    = "backlinks_pages";
+    const TYPE_BACKLINKS_REFDOMAINS             = "backlinks_refdomains";
 
 
 

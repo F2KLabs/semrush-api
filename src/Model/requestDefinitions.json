@@ -663,5 +663,74 @@
       "COLUMN_TARGET_URL",
       "COLUMN_ADS_COUNT"
     ]
+  },
+  "backlinks_pages": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "target": "string",
+      "target_type": "string"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "display_sort": "string"
+    },
+    "preset_fields": {
+      "target_type": "domain"
+    },
+    "default_columns": [
+      "COLUMN_RESPONSE_CODE",
+      "COLUMN_BACKLINKS_NUM",
+      "COLUMN_DOMAINS_NUM",
+      "COLUMN_LAST_SEEN",
+      "COLUMN_EXTERNAL_NUM",
+      "COLUMN_INTERNAL_NUM",
+      "COLUMN_SOURCE_URL",
+      "COLUMN_SOURCE_TITLE"
+    ],
+    "valid_columns": [
+      "COLUMN_RESPONSE_CODE",
+      "COLUMN_BACKLINKS_NUM",
+      "COLUMN_DOMAINS_NUM",
+      "COLUMN_LAST_SEEN",
+      "COLUMN_EXTERNAL_NUM",
+      "COLUMN_INTERNAL_NUM",
+      "COLUMN_SOURCE_URL",
+      "COLUMN_SOURCE_TITLE"
+    ]
+  },
+  "backlinks_refdomains": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "target": "string",
+      "target_type": "string"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "display_sort": "string",
+      "display_limit": "integer",
+      "display_offset": "integer",
+      "display_filter": "string"
+    },
+    "preset_fields": {
+      "target_type": "domain"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN",
+      "COLUMN_BACKLINKS",
+      "COLUMN_IP",
+      "COLUMN_COUNTRY",
+      "COLUMN_FIRST_SEEN",
+      "COLUMN_LAST_SEEN"
+    ],
+    "valid_columns": [
+      "COLUMN_DOMAIN",
+      "COLUMN_BACKLINKS",
+      "COLUMN_IP",
+      "COLUMN_COUNTRY",
+      "COLUMN_FIRST_SEEN",
+      "COLUMN_LAST_SEEN"
+    ]
   }
 }
