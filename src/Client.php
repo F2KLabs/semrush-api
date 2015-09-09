@@ -121,6 +121,16 @@ class Client
     }
 
     /**
+     * @param $domain
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getDomainAdwordsCompetitors($domain, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_DOMAIN_ADWORDS_COMPEITITORS, ['domain' => $domain] + $options);
+    }
+
+    /**
      * @param string $domain
      * @param array $options
      * @return ApiResult
