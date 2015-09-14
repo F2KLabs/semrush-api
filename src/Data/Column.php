@@ -52,6 +52,7 @@ abstract class Column
     const COLUMN_PUBLISHERS_COUNT = "publishers_count";
     const COLUMN_PUBLISHERS_OVERALL = "publishers_overall";
     const COLUMN_MEDIA_ADS_COUNT = "media_ads_count";
+    const COLUMN_MEDIA_ADS_OVERALL = "media_ads_overall";
     const COLUMN_TEXT_ADS_COUNT = "text_ads_count";
     const COLUMN_TEXT_ADS_OVERALL = "text_ads_overall";
 
