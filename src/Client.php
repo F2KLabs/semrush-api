@@ -276,12 +276,35 @@ class Client
         return $this->makeRequest(Type::TYPE_ADVERTISER_TEXT_ADS, ['domain'=>$domain] + $options, $endpoint_path, $root_domain);
     }
 
+    /**
+     * @param $domain
+     * @param array $options
+     * @param string $endpoint_path
+     * @param string $root_domain
+     * @return ApiResult
+     */
+    public function getAdvertiserRank($domain, $options = [], $endpoint_path="/", $root_domain = "http://api.asns.backend.semrush.com")
+    {
+        return $this->makeRequest(Type::TYPE_ADVERTISER_RANK, ['domain'=>$domain] + $options, $endpoint_path,$root_domain);
+    }
+
+    /**
+     * @param $target
+     * @param array $options
+     * @param string $endpoint_path
+     * @return ApiResult
+     */
     public function getIndexedPages($target, $options = [], $endpoint_path = ApiEndpoint::ENDPOINT_ANALYTICS)
     {
         return $this->makeRequest(Type::TYPE_INDEXED_PAGES, ['target'=>$target] + $options, $endpoint_path);
     }
 
-
+    /**
+     * @param $target
+     * @param array $options
+     * @param string $endpoint_path
+     * @return ApiResult
+     */
     public function getRefDomains($target, $options = [], $endpoint_path = ApiEndpoint::ENDPOINT_ANALYTICS)
     {
         return $this->makeRequest(Type::TYPE_BACKLINKS_REFDOMAINS, ['target'=>$target] + $options, $endpoint_path);
