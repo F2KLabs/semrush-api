@@ -48,6 +48,12 @@ abstract class Column
     const COLUMN_VISIBLE_URL    = "visible_url";
     const COLUMN_TARGET_URL     = "target_url";
     const COLUMN_ADS_COUNT      = "ads_count";
+    const COLUMN_ADS_OVERALL    = "ads_overall";
+    const COLUMN_PUBLISHERS_COUNT = "publishers_count";
+    const COLUMN_PUBLISHERS_OVERALL = "publishers_overall";
+    const COLUMN_MEDIA_ADS_COUNT = "media_ads_count";
+    const COLUMN_TEXT_ADS_COUNT = "text_ads_count";
+    const COLUMN_TEXT_ADS_OVERALL = "text_ads_overall";
 
     /* BACKLINKS COLUMNS */
     const COLUMN_DOMAIN         = "domain";

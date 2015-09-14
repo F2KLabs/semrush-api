@@ -702,6 +702,54 @@
       "COLUMN_ADS_COUNT"
     ]
   },
+  "advertiser_rank": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "action": "string",
+      "domain": "string",
+      "export": "string"
+    },
+    "optional_fields": {
+      "export_escape": "boolean",
+      "export_columns": "columns",
+      "device_type": "string"
+    },
+    "preset_fields": {
+      "export_escape": "1",
+      "action": "report",
+      "device_type": "all",
+      "export": "api"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN",
+      "COLUMN_FIRST_SEEN",
+      "COLUMN_LAST_SEEN",
+      "COLUMN_TIMES_SEEN",
+      "COLUMN_ADS_OVERALL",
+      "COLUMN_ADS_COUNT",
+      "COLUMN_TEXT_ADS_OVERALL",
+      "COLUMN_TEXT_ADS_COUNT",
+      "COLUMN_MEDIA_ADS_OVERALL",
+      "COLUMN_MEDIA_ADS_COUNT",
+      "COLUMN_PUBLISHERS_ADS_OVERALL",
+      "COLUMN_PUBLISHERS_ADS_COUNT"
+    ],
+    "valid_columns": [
+      "COLUMN_DOMAIN",
+      "COLUMN_FIRST_SEEN",
+      "COLUMN_LAST_SEEN",
+      "COLUMN_TIMES_SEEN",
+      "COLUMN_ADS_OVERALL",
+      "COLUMN_ADS_COUNT",
+      "COLUMN_TEXT_ADS_OVERALL",
+      "COLUMN_TEXT_ADS_COUNT",
+      "COLUMN_MEDIA_ADS_OVERALL",
+      "COLUMN_MEDIA_ADS_COUNT",
+      "COLUMN_PUBLISHERS_ADS_OVERALL",
+      "COLUMN_PUBLISHERS_ADS_COUNT"
+    ]
+  },
   "backlinks_pages": {
     "required_fields": {
       "type": "type",
