@@ -40,7 +40,22 @@ class UrlBuilder {
     protected function getUrl()
     {
         $params = $this->getOptionsAsStrings();
-        return $this->request->getEndpoint() . "?" . http_build_query($params);
+        $filterString = '';
+
+        if(isset($params['display_filter']))
+        {
+            $qString = new QueryString($params['display_filter']);
+            $filterString = $qString->build();
+
+            //We know it has to be atleast 1. If it's more we need to concat the string with the ampersand.
+            if(sizeof($params) > 1)
+                $filterString .= "&";
+
+            //Don't need to duplicate in http_build_query
+            unset($params['display_filter']);
+        }
+
+        return $this->request->getEndpoint() . "?". $filterString . http_build_query($params);
     }
 
 } 

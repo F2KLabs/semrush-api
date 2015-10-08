@@ -134,6 +134,10 @@ class Request
             case "integer":
                 $this->validateInteger($option, $value);
                 break;
+
+            case "array":
+                $this->validateArray($option,$value);
+                break;
         }
     }
 
@@ -191,6 +195,14 @@ class Request
     {
         if (!is_string($string)) {
             throw new InvalidOptionException("[{$key}] was not a string [{$string}]");
+        }
+    }
+
+    protected function validateArray($key, $array)
+    {
+        if(!is_array($array))
+        {
+            throw new InvalidOptionException("[{$key}] was not an array");
         }
     }
 

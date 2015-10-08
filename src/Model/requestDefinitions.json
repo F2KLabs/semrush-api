@@ -124,7 +124,8 @@
       "export_columns": "columns",
       "export_escape": "boolean",
       "display_sort": "string",
-      "display_limit": "integer"
+      "display_limit": "integer",
+      "display_filter": "array"
     },
     "preset_fields": {
       "export_escape": "1"
